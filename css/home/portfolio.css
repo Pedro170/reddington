@@ -34,7 +34,7 @@
   .portfolio {
     grid-template-columns: 1fr;
     gap: 5rem;
-    margin-top: 175px;
+    margin-top: 90px;
     background: var(--cor-13);
     padding: 3rem;
   }
