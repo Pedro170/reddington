@@ -1,0 +1,121 @@
+header {
+  border-top: solid 8px var(--cor-p8);
+  background: var(--cor-15);
+}
+
+#hamburguer {
+  display: none;
+}
+
+.header-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bg #menu {
+  display: flex;
+  align-items: center;
+  column-gap: .2rem;
+}
+
+.header-bg #menu a {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  font: 700 1.125rem/1.3 'Istok Web', sans-serif;
+  padding: .5rem;
+}
+
+.header-bg #menu a::before {
+  content: '';
+  position: relative;
+  top: -2px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.header-bg #menu a:hover::before {
+  background: var(--cor-p6);
+}
+
+.header-bg #menu a.ativo::before {
+  background: var(--cor-p6);
+}
+
+@media (max-width: 1000px) {
+  #hamburguer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  #hamburguer > span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    border-radius: 30px;
+    background: var(--cor-p8);
+    transition: .3s;
+  }
+
+  #hamburguer.abrir span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  #hamburguer.abrir span:nth-child(2) {
+    transform: translate(-50px, -12px);
+    background: var(--cor-p6);
+    opacity: 0;
+  }
+
+  #hamburguer.abrir span:nth-child(3) {
+    transform: rotate(-45deg);
+    margin-top: -24px;
+  }
+
+  .header-bg #menu {
+    display: block;
+    position: absolute;
+    top: 108px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--cor-14);
+    transition: .3s;
+  }
+
+  .header-bg #menu a {
+    font-size: 2rem;
+    border-bottom: solid 2px var(--cor-p8);
+    padding: 1rem .5rem;
+  }
+
+  .header-bg nav ul#menu.abrir {
+    left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo img {
+    width: 200px;
+  }
+}

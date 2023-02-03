@@ -1,0 +1,51 @@
+.introducao-bg {
+  width: 100%;
+  height: 568px;
+  background:
+    linear-gradient(to right, #171c1a, #192422d0, #1f2a288f, #ffffff00),
+    url('../../img/home/introducao2.jpg'), no-repeat
+  ;
+  background-size: cover;
+  background-position: center;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* align-items: center; */
+}
+
+.introducao h1 {
+  margin-bottom: .5rem;
+}
+
+.introducao p {
+  max-width: 34ch;
+  margin-bottom: 2.125rem;
+}
+
+@media (max-width: 1000px) {
+  .introducao p {
+    max-width: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  
+  .introducao h1 {
+    font-size: 32px;
+  }
+
+  .introducao p {
+    font-size: 24px;
+  }
+}

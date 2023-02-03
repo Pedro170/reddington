@@ -1,0 +1,78 @@
+.empreendimentos-bg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-cell {
+  width: 480px;
+  height: 324px;
+  margin-right: 40px;
+  background: var(--cor-05);
+  border-radius: 8px;
+  counter-increment: carousel-cell;
+  overflow: hidden;
+}
+
+.carousel .carousel-cell:nth-child(1) {
+  width: 560px;
+}
+
+.carousel .carousel-cell::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 380px;
+  height: 400px;
+  border-top-left-radius: 100%;
+  background: #9df5e3b9;
+  z-index: 1; 
+}
+
+.carousel .carousel-cell::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 380px;
+  height: 400px;
+  border-bottom-left-radius: 100%;
+  background: #171C1A;
+  background: #44BBA4;
+}
+
+.carousel-cell img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel-cell .btn-primary {
+  position: absolute;
+  right: 34px;
+  bottom: 34px;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .carousel-cell {
+    min-width: 320px;
+    width: 66%;
+    height: 324px;
+    margin-right: 20px;
+  }
+  
+  .carousel .carousel-cell:nth-child(1) {
+    width: 80%;
+  }
+
+  .carousel .carousel-cell::before {
+    width: 56%;
+    height: 400px;
+  }
+
+  .carousel .carousel-cell::after {
+    width: 56%;
+    height: 400px;
+  }
+}

@@ -1,0 +1,51 @@
+/* .font-d-xxxl {
+  font: 700 6rem/1.5 'Istok Web', sans-serif;
+} */
+
+.font-d-xxxl {
+  font: 700 4rem/1.5 'Istok Web', sans-serif;
+}
+
+.font-d-xl {
+  font: 700 3rem/1.5 'Istok Web', sans-serif;
+}
+
+.font-d-mm {
+  font: 700 2.5rem/1.4 'Istok Web', sans-serif;
+}
+
+.font-d-m {
+  font: 700 2.5rem/1.4 'Istok Web', sans-serif;
+}
+
+.font-d-ss {
+  font: 700 2.25rem/1.3 'Istok Web', sans-serif;
+}
+
+.font-d-s {
+  font: 700 2rem/1.3 'Istok Web', sans-serif;
+}
+
+.font-d-xs {
+  font: 700 1.125rem/1.2 'Istok Web', sans-serif;
+}
+
+.font-xxl {
+  font: 400 2rem/1.25 'Roboto', sans-serif;
+}
+
+.font-xl {
+  font: 400 1.75rem/1.15 'Roboto', sans-serif;
+}
+
+.font-x {
+  font: 400 1.5rem/1.43 'Roboto', sans-serif;
+}
+
+.font-s {
+  font: 400 1.25rem/1.34 'Roboto', sans-serif;
+}
+
+.font-xs {
+  font: 400 1.25rem/1.5 'Roboto', sans-serif;
+}
