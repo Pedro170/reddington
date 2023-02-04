@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: repeat(2, 4fr);
   flex-wrap: wrap;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .numero-clientes-conteudo > div {
@@ -27,6 +28,7 @@
     padding: 2rem;
     border-radius: var(--border-r-1);
     background: var(--cor-02);
+    box-shadow: 0 1px 1px 0 #b1c4c180;
     margin-bottom: 1rem;
   }
 }

@@ -14,3 +14,7 @@ img {
 a {
   color: inherit;
 }
+
+body {
+  overflow-y: auto;
+}

@@ -25,7 +25,7 @@
 .footer h2::after {
   content: '';
   display: block;
-  width: 120px;
+  width: 35%;
   height: 6px;
   border-radius: 2px;
   background: var(--cor-p6);
@@ -86,6 +86,15 @@
 
   .footer h2 {
     font-size: 1.5rem;
+  }
+
+  .footer h2::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 6px;
+    border-radius: 2px;
+    background: var(--cor-p6);
   }
 
   .footer p {

@@ -1,0 +1,8 @@
+.banner-bg {
+  background:
+    linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
+    url('../../img/sobre/bg-sobre01.jpg'), no-repeat
+  ;
+  background-position: center;
+  background-size: cover;
+}

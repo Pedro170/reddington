@@ -2,6 +2,44 @@
   margin-top: auto;
 }
 
+.historia-content {
+  padding: 0 5rem;
+  margin-bottom: 6.25rem;
+}
+
+.historia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  height: 600px;
+  max-height: 600px;
+  max-width: 1400px;
+  border-radius: var(--border-r-1);
+  background: var(--cor-13);
+  padding: 2.5rem;
+}
+
+.historia-conteudo h2 {
+  margin-bottom: 1.5rem;
+}
+
+.historia-imagem {
+  position: relative;
+  border-radius: var(--border-r-1);
+  overflow: hidden;
+}
+
+.historia-imagem img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 
+
 .time-line-card-bg {
   padding: 0 1rem;
 }
@@ -53,4 +91,4 @@
   .time-line-card {
     padding: 0;
   }
-}
+} */

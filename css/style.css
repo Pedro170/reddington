@@ -23,8 +23,9 @@
 
 /* Sobre */
 
+@import url('./sobre/banner.css');
 @import url('./sobre/time-line.css');
-@import url('./sobre/time-line-card.css');
+@import url('./sobre/hisitoria.css');
 @import url('./sobre/numero-clientes.css');
 
 /* Tecnologia */

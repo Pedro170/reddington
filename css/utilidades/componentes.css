@@ -80,11 +80,6 @@
   padding: 6.25rem 0;
 }
 
-.padding-2 {
-  position: relative;
-  padding-bottom: 6.25rem;
-}
-
 .mb {
   margin-bottom: 0;
 }
@@ -93,12 +88,6 @@
 .banner-bg {
   display: flex;
   align-items: center;
-  background:
-    linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
-    url('../../img/sobre/bg-sobre01.jpg')
-  ;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
 }
