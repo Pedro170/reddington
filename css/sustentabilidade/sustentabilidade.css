@@ -1,0 +1,54 @@
+#sustentabilidade .footer-bg {
+  margin-top: auto;
+}
+
+.sustentabilidade-bg {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sustentabilidade-conteudo h2,
+.sustentabilidade-conteudo p,
+.ods {
+  margin-bottom: 2.125rem;
+}
+
+.sustentabilidade-conteudo p {
+  max-width: 48ch;
+}
+
+.ods {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.sustentabilidade-img {
+  margin-left: -2%;
+  width: 104%;
+}
+
+@media ( max-width: 800px ) {
+  #sustentabilidade .padding-1 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sustentabilidade-conteudo h2 {
+    font-size: 2rem;
+  }
+
+  .sustentabilidade-conteudo p {
+    font-size: 1.5rem;
+  }
+
+  .ods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 1rem;
+  }
+}

@@ -1,6 +1,50 @@
 #sustentabilidade .banner-bg {
   background:
     linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
-    url('../../img/sustentabilidade/bg-sustentabilidade.jpg')
+    url('../../img/sustentabilidade/bg-sustentabilidade001.jpg') 100%
   ;
+  background-size: contain;
+}
+
+@media (max-width: 1000px) {
+  #sustentabilidade .banner h1 {
+    word-break: break-all;
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 720px) {
+  #sustentabilidade .banner h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  #sustentabilidade .banner-bg {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 720px) {
+  #sustentabilidade .banner h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #sustentabilidade .banner h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #sustentabilidade .banner h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #sustentabilidade .banner h1 {
+    font-size: 1.5rem;
+  }
 }
