@@ -130,16 +130,12 @@
 
 @media (max-width: 600px) {
   .container {
-    padding: 1.25rem  1.5rem;
+    padding: 1.25rem  1rem;
   }
 
   .padding-1 {
     position: relative;
     padding: 3rem 0;
-  }
-
-  .padding-2 {
-    padding-bottom: 3rem;
   }
 
   .titulo-primary {

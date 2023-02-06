@@ -84,4 +84,8 @@
   .historia-conteudo p {
     font-size: 1rem;
   }
+
+  #sobre .titulo-primary {
+    font-size: 1.5rem;
+  }
 }
