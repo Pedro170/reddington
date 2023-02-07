@@ -1,13 +1,13 @@
-#portfolio .banner-bg {
+#contato .banner-bg {
   background:
     linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
-    url('../../img/portfolio/bg-portfolio.jpg') 100%
+    url('../../img/contato/bg-contato.jpg') 100%
   ;
   background-size: contain;
 }
 
-@media( max-width: 600px ) {
-  #portfolio .banner-bg {
+@media ( max-width: 800px ) {
+  #contato .banner-bg {
     background-size: cover;
   }
 }

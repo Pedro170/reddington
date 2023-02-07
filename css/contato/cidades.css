@@ -1,0 +1,26 @@
+.contato-cidades {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.125rem;
+}
+
+.contato-cidades div {
+  border-radius: 64px 12px 64px 12px;
+  border: solid 2px var(--cor-03);
+  padding: 2rem;
+}
+
+.contato-cidades div h3 {
+  font: 700 1.3rem/1.3 'Istok Web', sans-serif;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  .contato-cidades p {
+    font-size: 1.2rem;
+  }
+
+  .contato-cidades {
+    row-gap: 1.5rem;
+  }
+}

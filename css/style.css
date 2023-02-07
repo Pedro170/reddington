@@ -40,7 +40,15 @@
 @import url('./sustentabilidade/susten.css');
 @import url('./sustentabilidade/tripe.css');
 
-/* Portfólio*/
+/* Portfólio */
 
 @import url('./portfolio/banner.css');
 @import url('./portfolio/pg-portfolio.css');
+@import url('./portfolio/pg-imoveis.css');
+
+/* Contato */
+
+@import url('./contato/banner.css');
+@import url('./contato/contato.css');
+@import url('./contato/cidades.css');
+@import url('./contato/perguntas.css');

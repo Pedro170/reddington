@@ -1,0 +1,31 @@
+/* .pg-imoveis-item {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1.5fr;
+  gap: 1rem;
+  width: 100%;
+  box-shadow: 0 2px 2px 0px #ddd;
+}
+
+.pg-imoveis-conteudo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+} */
+
+/* .pg-imoveis-conteudo::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 100%;
+  background: blue;
+} */
+
+/* .pg-imoveis-conteudo,
+.pg-imoveis-info {
+  position: relative;
+  padding: 1.5rem;
+}
+
+.pg-imoveis-info li img {
+  width: 24px;
+} */
