@@ -1,4 +1,4 @@
-.banner-bg {
+#portfolio .banner-bg {
   background:
     linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
     url('../../img/portfolio/bg-portfolio.jpg') 100%
