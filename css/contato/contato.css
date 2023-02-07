@@ -75,8 +75,4 @@
   .formulario form {
     gap: 1rem;
   }
-
-  .formulario form label {
-    margin-bottom: 0;
-  }
 }
