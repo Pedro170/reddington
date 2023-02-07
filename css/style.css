@@ -39,3 +39,8 @@
 @import url('./sustentabilidade/sustentabilidade.css');
 @import url('./sustentabilidade/susten.css');
 @import url('./sustentabilidade/tripe.css');
+
+/* Portfólio*/
+
+@import url('./portfolio/banner.css');
+@import url('./portfolio/pg-portfolio.css');

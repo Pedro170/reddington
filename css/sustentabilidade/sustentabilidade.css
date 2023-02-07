@@ -37,18 +37,16 @@
 }
 
 @media (max-width: 600px) {
+  .ods {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
   .sustentabilidade-conteudo h2 {
     font-size: 2rem;
   }
 
   .sustentabilidade-conteudo p {
     font-size: 1.5rem;
-  }
-
-  .ods {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    gap: 1rem;
   }
 }
