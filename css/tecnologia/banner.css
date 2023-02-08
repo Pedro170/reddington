@@ -1,17 +1,13 @@
 #tecnologia .banner-bg {
   background:
     linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
-    url('../../img/tecnologia/bg-tecnologia.jpg') 100%
+    url('../../img/tecnologia/bg-tecnologia001.jpg') 100%
   ;
   background-size: contain;
 }
 
 @media ( max-width: 1000px ) {
   #tecnologia .banner-bg {
-    background:
-      linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
-      url('../../img/tecnologia/bg-tecnologia.jpg')
-    ;
     background-size: cover;
   }
 }
