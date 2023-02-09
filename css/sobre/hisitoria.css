@@ -24,6 +24,7 @@
 
 .historia-imagem {
   position: relative;
+  height: 500px;
   border-radius: var(--border-r-1);
   overflow: hidden;
 }
@@ -73,10 +74,6 @@
   .historia {
     /* height: 450px; */
     padding: 1rem;
-  }
-
-  .historia-conteudo {
-    /* height: 40px; */
   }
 
   .historia-conteudo h2 {
