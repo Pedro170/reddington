@@ -1,8 +1,31 @@
-.banner-bg {
+/* .banner-bg {
   background:
     linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
     url('../../img/sobre/bg-sobre01.jpg'), no-repeat
   ;
   background-position: center;
   background-size: cover;
+} */
+
+#sobre .banner-bg {
+  background:
+    linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
+    url('../../img/sobre/bg-sobre01.jpg') 100%
+  ;
+  background-size: contain;
+}
+
+#sobre .banner-bg {
+  background-position: center;
+  background-size: cover;
+}
+
+@media ( max-width: 600px ) {
+  #sobre .banner-bg {
+    background:
+      linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
+      url('../../img/sobre/bg-sobre02.jpg')
+    ;
+    background-size: cover;
+  }
 }

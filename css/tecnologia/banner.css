@@ -31,6 +31,16 @@
   }
 }
 
+@media (max-width: 600px) {
+  #tecnologia .banner-bg {
+    background:
+      linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
+      url('../../img/tecnologia/bg-tecnologia002.jpg')
+    ;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 400px) {
   #tecnologia .banner h1 {
     font-size: 2.5rem;
