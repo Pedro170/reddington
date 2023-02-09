@@ -40,47 +40,56 @@ function handleMudarTexto(foto) {
   foto.addEventListener('click', handleTrocar)
 }
 
-function handleTrocar( event ) {
-  const ano = event.target
-  const hTitulo = document.querySelector('.historia-conteudo h2')
-  const hParag = document.querySelector('.historia-conteudo p')
-  const himg = document.querySelector('.historia-imagem img')
+// function handleTrocar( event ) {
+//   const ano = event.target
+//   const hTitulo = document.querySelector('.historia-conteudo h2')
+//   const hParag = document.querySelector('.historia-conteudo p')
+//   const himg = document.querySelector('.historia-imagem img')
 
-  const getDados = async () => {
-    const response = await fetch(`../dados.json`)
-    const json = await response.json() 
+//   const getDados = async () => {
+//     const response = await fetch(`../dados.json`)
+//     const json = await response.json() 
 
-    const anoJson = json.filter(( anos ) => anos.ano === ano.innerHTML)
+//     const anoJson = json.filter(( anos ) => anos.ano === ano.innerHTML)
 
-    if( anoJson ) {
-      anoJson.map((item) => {
-        hTitulo.innerHTML = item.titulo
-        hParag.innerHTML = item.historia
-        himg.src = item.foto
-      })
-    }
-  }
-  getDados()
-}
+//     if( anoJson ) {
+//       anoJson.map((item) => {
+//         hTitulo.innerHTML = item.titulo
+//         hParag.innerHTML = item.historia
+//         himg.src = item.foto
+//       })
+//     }
+//   }
+//   getDados()
+// }
 
-btnsSobre.forEach( handleMudarTexto )
+// btnsSobre.forEach( handleMudarTexto )
 
 
 /* Portfólio */
 
-const fotosGaleria = document.querySelectorAll('.portfolio-galeria.galeria1 img')
-const fotoPrincipal = document.querySelector('#galeria1 img')
+const galeria1 = document.querySelectorAll('.portfolio-galeria img')
+const foto1 = document.querySelector('#galeria1 img')
+const galeria2 = document.querySelectorAll('.portfolio-galeria.galeria2 img')
+const foto2 = document.querySelector('#galeria2 img')
+const galeria3 = document.querySelectorAll('.portfolio-galeria.galeria3 img')
+const foto3 = document.querySelector('#galeria3 img')
+
 
 function trocarPredio( event ) {
   const foto = event.currentTarget
-  fotoPrincipal.setAttribute('src', foto.getAttribute('src'))
+  // foto.classList.add('border')
+  // // if( foto.includes(event.currentTarget) ) {
+  // //   foto.classList.remove('border')
+  // // }
+  foto1.setAttribute('src', foto.getAttribute('src'))
 }
 
 function handleTracarFotoGaleria (foto) {
   foto.addEventListener('click', trocarPredio)
 }
 
-fotosGaleria.forEach( handleTracarFotoGaleria )
+galeria1.forEach( handleTracarFotoGaleria )
 
 // Termos
 
