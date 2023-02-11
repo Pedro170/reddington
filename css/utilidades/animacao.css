@@ -1,16 +1,16 @@
-.js-scroll {
+.js-scroll,
+.js-scroll-right {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
   transition: .3s;
 }
 
-.js-scroll.anima-scroll-left {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition: .3s;
+.js-scroll-right {
+  transform: translate3d( 30px, 0, 0 );
 }
 
-.js-scroll.anima-scroll-right {
+.js-scroll.anima-scroll-left,
+.js-scroll-right.anima-scroll-right {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transition: .3s;

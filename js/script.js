@@ -74,10 +74,6 @@ const foto3 = document.querySelector("#galeria3 img");
 
 function trocarPredio(event) {
   const foto = event.currentTarget;
-  // foto.classList.add('border')
-  // // if( foto.includes(event.currentTarget) ) {
-  // //   foto.classList.remove('border')
-  // // }
   foto1.setAttribute("src", foto.getAttribute("src"));
 }
 
@@ -90,7 +86,7 @@ galeria1.forEach(handleTracarFotoGaleria);
 /* Anima Scroll */
 
 const articlesLeft = document.querySelectorAll(".js-scroll");
-const articlesRight = document.querySelectorAll(".js-scroll");
+const articlesRight = document.querySelectorAll(".js-scroll-right");
 
 if (articlesLeft.length || articlesRight.length) {
   const windowMetade = window.innerHeight * 0.5;
@@ -103,9 +99,10 @@ if (articlesLeft.length || articlesRight.length) {
 
       if (isArticleVisible) {
         articleLeft.classList.add("anima-scroll-left");
-      } else {
-        articleLeft.classList.remove("anima-scroll-left");
-      }
+      } 
+      // else {
+      //   articleLeft.classList.remove("anima-scroll-left");
+      // }
     });
 
     articlesRight.forEach((articlesRight) => {
@@ -114,9 +111,10 @@ if (articlesLeft.length || articlesRight.length) {
 
       if (isArticleVisible) {
         articlesRight.classList.add("anima-scroll-right");
-      } else {
-        articlesRight.classList.remove("anima-scroll-right");
-      }
+      } 
+      // else {
+      //   articlesRight.classList.remove("anima-scroll-right");
+      // }
     });
   }
   window.addEventListener("scroll", animaScroll);
@@ -140,3 +138,24 @@ numeros.forEach((numero) => {
     }
   }, 25 * Math.random())
 })
+
+/* Contato */
+
+const parametros = new URLSearchParams(location.search)
+const modal = document.querySelector('#container-modal')
+const fechar = document.querySelector('#container-modal button')
+
+function ativarParam( param ) {
+  if( param  !== '' ) {
+    modal.classList.add('mostrar')
+    fechar.addEventListener('click', () => {
+      modal.classList.remove('mostrar')
+    })
+  }
+}
+
+function handleSubmit () {
+  console.log('object')
+}
+
+parametros.forEach(ativarParam)
