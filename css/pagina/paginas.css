@@ -1,0 +1,59 @@
+#time .footer-bg,
+#termos .footer-bg,
+#parceiros .footer-bg {
+  margin-top: auto;
+}
+
+#time .banner-bg {
+  background: linear-gradient(
+      45deg,
+      var(--cor-14) 50%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    url("../../img/paginas/bg-time.jpg") 100%;
+  background-size: contain;
+}
+
+#parceiros .banner-bg {
+  background: linear-gradient(
+      45deg,
+      var(--cor-14) 50%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    url("../../img/paginas/bg-parceiros.jpg") 100%;
+  background-size: contain;
+}
+
+#termos .banner-bg {
+  background: linear-gradient(
+      45deg,
+      var(--cor-14) 50%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    url("../../img/paginas/bg-termos.jpg") 100%;
+  background-size: contain;
+}
+
+@media (max-width: 600px) {
+  #time .banner-bg,
+  #termos .banner-bg,
+  #parceiros .banner-bg {
+    background-size: cover;
+  }
+
+  #time .banner-bg h1 {
+    font-size: 3.5rem;
+  }
+
+  #time .padding-1,
+  #termos .padding-1,
+  #parceiros .padding-1 {
+    padding: 3rem 1rem;
+  }
+
+  #time .container p,
+  #termos .container p,
+  #parceiros .container p {
+    font-size: 2rem;
+  }
+}

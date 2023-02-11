@@ -54,3 +54,7 @@
 @import url('./contato/cidades.css');
 @import url('./contato/perguntas.css');
 @import url('./contato/modal.css');
+
+/* Páginas */
+
+@import url('./pagina/paginas.css');
