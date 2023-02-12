@@ -2,7 +2,7 @@
   height: 568px;
   background:
     linear-gradient(to right, #171c1a, #192422d0, #1f2a288f, #ffffff00),
-    url('../../img/home/introducao2.jpg'), no-repeat
+    url('../img/home/introducao2.jpg'), no-repeat
   ;
   background-size: cover;
   background-position: center;

@@ -14,7 +14,7 @@
       var(--cor-14) 50%,
       rgba(255, 255, 255, 0) 50%
     ),
-    url("../../img/paginas/bg-time.jpg") 100%;
+    url("../img/paginas/bg-time.jpg") 100%;
   background-size: contain;
 }
 
@@ -24,7 +24,7 @@
       var(--cor-14) 50%,
       rgba(255, 255, 255, 0) 50%
     ),
-    url("../../img/paginas/bg-time.jpg") 100%;
+    url("../img/paginas/bg-time.jpg") 100%;
   background-size: contain;
 }
 
@@ -34,7 +34,7 @@
       var(--cor-14) 50%,
       rgba(255, 255, 255, 0) 50%
     ),
-    url("../../img/paginas/bg-parceiros.jpg") 100%;
+    url("../img/paginas/bg-parceiros.jpg") 100%;
   background-size: contain;
 }
 
@@ -44,7 +44,7 @@
       var(--cor-14) 50%,
       rgba(255, 255, 255, 0) 50%
     ),
-    url("../../img/paginas/bg-termos.jpg") 100%;
+    url("../img/paginas/bg-termos.jpg") 100%;
   background-size: contain;
 }
 

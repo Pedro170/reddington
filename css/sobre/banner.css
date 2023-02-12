@@ -10,7 +10,7 @@
 #sobre .banner-bg {
   background:
     linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
-    url('../../img/sobre/bg-sobre01.jpg') 100%
+    url('../img/sobre/bg-sobre01.jpg') 100%
   ;
   background-size: contain;
 }
@@ -24,7 +24,7 @@
   #sobre .banner-bg {
     background:
       linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
-      url('../../img/sobre/bg-sobre02.jpg')
+      url('../img/sobre/bg-sobre02.jpg')
     ;
     background-size: cover;
   }

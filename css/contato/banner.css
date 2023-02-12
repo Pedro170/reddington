@@ -1,7 +1,7 @@
 #contato .banner-bg {
   background:
     linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
-    url('../../img/contato/bg-contato.jpg') 100%
+    url('../img/contato/bg-contato.jpg') 100%
   ;
   background-size: contain;
 }
