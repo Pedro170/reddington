@@ -14,6 +14,8 @@
   border-radius: var(--border-r-1);
   max-height: 600px;
   height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .imoveis li.imoveis-img:nth-child(2) img {
