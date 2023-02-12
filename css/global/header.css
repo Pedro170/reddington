@@ -119,4 +119,8 @@ header {
   .logo img {
     width: 200px;
   }
+
+  .header-bg #menu {
+    top: 96px;
+  }
 }

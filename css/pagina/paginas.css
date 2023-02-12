@@ -1,10 +1,24 @@
 #time .footer-bg,
 #termos .footer-bg,
-#parceiros .footer-bg {
+#parceiros .footer-bg,
+#site-fotos .footer-bg,
+#athenas .footer-bg, 
+#apolo .footer-bg,
+#afrodite .footer-bg {
   margin-top: auto;
 }
 
 #time .banner-bg {
+  background: linear-gradient(
+      45deg,
+      var(--cor-14) 50%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    url("../../img/paginas/bg-time.jpg") 100%;
+  background-size: contain;
+}
+
+#site-fotos .banner-bg {
   background: linear-gradient(
       45deg,
       var(--cor-14) 50%,
@@ -41,19 +55,39 @@
     background-size: cover;
   }
 
-  #time .banner-bg h1 {
+  #time .banner-bg h1,
+  #site-fotos .banner-bg h1,
+  #termos .banner-bg h1 {
     font-size: 3.5rem;
   }
 
   #time .padding-1,
   #termos .padding-1,
-  #parceiros .padding-1 {
+  #parceiros .padding-1,
+  #site-fotos .padding-1,
+  #athenas .padding-1,
+  #apolo .padding-1,
+  #afrodite .padding-1 {
     padding: 3rem 1rem;
   }
 
   #time .container p,
   #termos .container p,
-  #parceiros .container p {
+  #parceiros .container p,
+  #site-fotos .container p,
+  #athenas .container p,
+  #apolo .container p,
+  #afrodite .container p {
     font-size: 2rem;
+  }
+
+  #time  p#footer-tel,
+  #termos  p#footer-tel,
+  #parceiros  p#footer-tel,
+  #site-fotos  p#footer-tel,
+  #athenas  p#footer-tel,
+  #apolo  p#footer-tel,
+  #afrodite  p#footer-tel {
+    font-size: 1.27rem;
   }
 }

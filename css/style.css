@@ -58,3 +58,9 @@
 /* Páginas */
 
 @import url('./pagina/paginas.css');
+
+/* Prédios */
+
+@import url('./predios/athenas.css');
+@import url('./predios/apolo.css');
+@import url('./predios/afrodite.css');

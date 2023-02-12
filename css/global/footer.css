@@ -100,6 +100,10 @@
   .footer p {
     font-size: 1rem;
   }
+
+  .footer  p#footer-tel {
+    font-size: 1.27rem;
+  }
 }
 
 @media ( max-width: 500px ) {

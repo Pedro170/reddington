@@ -85,77 +85,81 @@ galeria1.forEach(handleTracarFotoGaleria);
 
 /* Anima Scroll */
 
-const articlesLeft = document.querySelectorAll(".js-scroll");
-const articlesRight = document.querySelectorAll(".js-scroll-right");
+function initScroll() {
+  const articlesLeft = document.querySelectorAll(".js-scroll");
+  const articlesRight = document.querySelectorAll(".js-scroll-right");
 
-if (articlesLeft.length || articlesRight.length) {
-  const windowMetade = window.innerHeight * 0.5;
+  if (articlesLeft.length || articlesRight.length) {
+    const windowMetade = window.innerHeight * 0.5;
 
-  function animaScroll() {
-    articlesLeft.forEach((articleLeft) => {
-      const articleTop = articleLeft.getBoundingClientRect();
-      const isArticleVisible = articleTop.top - windowMetade < 0;
-      // const isArticleVisible = (articleTop.top -windowMetade) < 0;
+    function animaScroll() {
+      articlesLeft.forEach((articleLeft) => {
+        const articleTop = articleLeft.getBoundingClientRect();
+        const isArticleVisible = articleTop.top - windowMetade < 0;
+        // const isArticleVisible = (articleTop.top -windowMetade) < 0;
 
-      if (isArticleVisible) {
-        articleLeft.classList.add("anima-scroll-left");
-      } 
-      // else {
-      //   articleLeft.classList.remove("anima-scroll-left");
-      // }
-    });
+        if (isArticleVisible) {
+          articleLeft.classList.add("anima-scroll-left");
+        }
+        // else {
+        //   articleLeft.classList.remove("anima-scroll-left");
+        // }
+      });
 
-    articlesRight.forEach((articlesRight) => {
-      const articleTop = articlesRight.getBoundingClientRect();
-      const isArticleVisible = articleTop.top - windowMetade < 0;
+      articlesRight.forEach((articlesRight) => {
+        const articleTop = articlesRight.getBoundingClientRect();
+        const isArticleVisible = articleTop.top - windowMetade < 0;
 
-      if (isArticleVisible) {
-        articlesRight.classList.add("anima-scroll-right");
-      } 
-      // else {
-      //   articlesRight.classList.remove("anima-scroll-right");
-      // }
-    });
+        if (isArticleVisible) {
+          articlesRight.classList.add("anima-scroll-right");
+        }
+        // else {
+        //   articlesRight.classList.remove("anima-scroll-right");
+        // }
+      });
+    }
+    window.addEventListener("scroll", animaScroll);
   }
-  window.addEventListener("scroll", animaScroll);
 }
+
+initScroll()
 
 /* Sbre anima números */
 
-const numeros = document.querySelectorAll('[data-numero]')
+const numeros = document.querySelectorAll("[data-numero]");
 
 numeros.forEach((numero) => {
-  const total = +numero.innerText
+  const total = +numero.innerText;
   const incremento = Math.floor(total / 100);
-  
+
   let start = 0;
   const timer = setInterval(() => {
-    start+= incremento;
+    start += incremento;
     numero.innerText = start;
-    if(start > total) {
-      numero.innerText = total
-      clearInterval(timer)
+    if (start > total) {
+      numero.innerText = total;
+      clearInterval(timer);
     }
-  }, 25 * Math.random())
-})
+  }, 25 * Math.random());
+});
 
 /* Contato */
 
-const parametros = new URLSearchParams(location.search)
-const modal = document.querySelector('#container-modal')
-const fechar = document.querySelector('#container-modal button')
+const parametros = new URLSearchParams(location.search);
+const modal = document.querySelector("#container-modal");
+const fechar = document.querySelector("#container-modal button");
 
-function ativarParam( param ) {
-  if( param  !== '' ) {
-    modal.classList.add('mostrar')
-    fechar.addEventListener('click', () => {
-      modal.classList.remove('mostrar')
-    })
+function ativarParam(param) {
+  if (param !== "") {
+    modal.classList.add("mostrar");
+    fechar.addEventListener("click", () => {
+      modal.classList.remove("mostrar");
+    });
   }
 }
 
-function handleSubmit () {
-  console.log('object')
+function handleSubmit() {
+  console.log("object");
 }
 
-parametros.forEach(ativarParam)
+parametros.forEach(ativarParam);

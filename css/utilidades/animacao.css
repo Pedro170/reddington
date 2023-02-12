@@ -15,3 +15,10 @@
   transform: translate3d(0, 0, 0);
   transition: .3s;
 }
+
+@media ( max-width: 600px ) {
+  .js-scroll-right {
+    transform: translate3d( 0, 0, 0 );
+  }
+}
+
