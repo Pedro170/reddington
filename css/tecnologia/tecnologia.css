@@ -55,16 +55,20 @@
   max-width: 120ch;
 }
 
+.tecnologia-item:nth-child(1) p {
+  margin-top: -2rem;
+}
+
 .tecnologia-item:nth-child(2) p {
-  margin-top: 6.5rem;
+  margin-top: 8rem;
 }
 
 .tecnologia-item:nth-child(3) p{
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .tecnologia-item:nth-child(4) p {
-  margin-top: 7rem;
+  margin-top: 8rem;
 }
 
 .tech-imagem {
