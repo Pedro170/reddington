@@ -1,0 +1,16 @@
+#afrodite .banner-bg {
+  background: linear-gradient(
+      45deg,
+      var(--cor-14) 50%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    url("../../img/predios/bg-afrodite.jpg") 100%;
+  background-size: contain;
+}
+
+@media ( max-width: 600px ) {
+  #afrodite .banner-bg {
+    background-size: cover;
+    background-position: center;
+  }
+}
