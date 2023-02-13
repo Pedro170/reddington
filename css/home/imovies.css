@@ -30,6 +30,13 @@
   margin-top: 150px;
 }
 
+@media (min-width: 1500px) {
+  .imoveis {
+    margin-inline: auto;
+    max-width: 1600px;
+  }
+}
+
 @media (max-width: 1000px) {
   .imoveis {
     gap: 1.5rem;

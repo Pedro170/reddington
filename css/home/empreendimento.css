@@ -55,6 +55,20 @@
   z-index: 1;
 }
 
+@media (min-width: 1500px) {
+  .carousel-cell,
+  .carousel .carousel-cell:nth-child(1) {
+    width: 66%;
+    height: 600px;
+  }
+  
+  .carousel .carousel-cell::before,
+  .carousel .carousel-cell::after {
+    width: 50%;
+    height: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .carousel-cell {
     min-width: 320px;

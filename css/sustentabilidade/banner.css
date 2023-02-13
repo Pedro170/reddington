@@ -6,6 +6,15 @@
   background-size: contain;
 }
 
+@media ( min-width: 1400px ) {
+  #sustentabilidade .banner-bg {
+    background:
+      linear-gradient( 45deg, var(--cor-14) 50%, rgba(255, 255, 255, 0) 50%),
+      url('../img/sustentabilidade/bg-sustentabilidade-xl.jpg') 100%
+    ;
+  }
+}
+
 @media (max-width: 1000px) {
   #sustentabilidade .banner h1 {
     word-break: break-all;
