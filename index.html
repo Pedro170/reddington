@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <title>Reddington</title>
@@ -56,18 +57,20 @@
     <h2 class="titulo-primary">Empreendimentos</h2>
     <div class="empreendimentos">
       <div class="carousel" data-flickity='{ "wrapAround": true }'>
-        <div class="carousel-cell">
+        <picture class="carousel-cell">
+          <source media="(min-width: 1500px)" srcset="./img/home/bg-c-001.jpg">
           <img src="./img/home/c_img02.jpg" alt="prédio em construção" width="1120" height="648">
           <a href="./predios/apolo.html" class="btn-primary">Saiba Mais</a>
-        </div>
-        <div class="carousel-cell">
+        </picture>
+        <picture class="carousel-cell">
           <img src="./img/home/c_img03.jpg" alt="prédio em construção" width="960" height="648">
           <a href="./predios/athenas.html" class="btn-primary">Saiba Mais</a>
-        </div>
-        <div class="carousel-cell">
+        </picture>
+        <picture class="carousel-cell">
+          <source media="(min-width: 1500px)" srcset="./img/home/bg-c-002.jpg">
           <img src="./img/home/c_img01.jpg" alt="prédio em construção" width="960" height="648">
           <a href="./predios/afrodite.html" class="btn-primary">Saiba Mais</a>
-        </div>
+        </picture>
       </div>
     </div>
   </article>
