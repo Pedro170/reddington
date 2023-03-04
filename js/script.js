@@ -38,30 +38,30 @@ function handleMudarTexto(foto) {
   foto.addEventListener("click", handleTrocar);
 }
 
-// function handleTrocar( event ) {
-//   const ano = event.target
-//   const hTitulo = document.querySelector('.historia-conteudo h2')
-//   const hParag = document.querySelector('.historia-conteudo p')
-//   const himg = document.querySelector('.historia-imagem img')
+function handleTrocar(event) {
+  const ano = event.target;
+  const hTitulo = document.querySelector(".historia-conteudo h2");
+  const hParag = document.querySelector(".historia-conteudo p");
+  const himg = document.querySelector(".historia-imagem img");
 
-//   const getDados = async () => {
-//     const response = await fetch(`../dados.json`)
-//     const json = await response.json()
+  const getDados = async () => {
+    const response = await fetch(`dados.json`);
+    const json = await response.json();
 
-//     const anoJson = json.filter(( anos ) => anos.ano === ano.innerHTML)
+    const anoJson = json.filter((anos) => anos.ano === ano.innerHTML);
 
-//     if( anoJson ) {
-//       anoJson.map((item) => {
-//         hTitulo.innerHTML = item.titulo
-//         hParag.innerHTML = item.historia
-//         himg.src = item.foto
-//       })
-//     }
-//   }
-//   getDados()
-// }
+    if (anoJson) {
+      anoJson.map((item) => {
+        hTitulo.innerHTML = item.titulo;
+        hParag.innerHTML = item.historia;
+        himg.src = item.foto;
+      });
+    }
+  };
+  getDados();
+}
 
-// btnsSobre.forEach( handleMudarTexto )
+btnsSobre.forEach(handleMudarTexto);
 
 /* Portfólio */
 
@@ -122,7 +122,7 @@ function initScroll() {
   }
 }
 
-initScroll()
+initScroll();
 
 /* Sbre anima números */
 
@@ -159,7 +159,7 @@ function ativarParam(param) {
 }
 
 function handleSubmit() {
-  console.log("object");
+  // console.log("object");
 }
 
 parametros.forEach(ativarParam);
