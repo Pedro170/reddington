@@ -33,8 +33,8 @@ btnHamburguer.addEventListener("click", () => {
 /* Sobre */
 
 function timeLine() {
+  const historia = document.querySelector("#sobre .historia");
   const btnsSobre = document.querySelectorAll(".btn-time");
-  const historia = document.querySelector(".historia");
   let anoLimpo = "";
 
   const elemetHistory = {
@@ -45,7 +45,8 @@ function timeLine() {
     foto: "https://lh3.googleusercontent.com/inaOmQ6trrgYlQv9cOEBGkK6J86HTGlp5UPfLFve8BHFZfk9eyCEm5xA-3qYDdbuQ7hUMCFreA0rQYqKZz5CqrCGA8S7kmX8MzO88id-vW6Cov9Gr1-a9jlm3tRrjYv-QASnT5RGNGVIshO1M53PxIUuM2qLAwregc1PnXYRiMUkY5JjeQq5d6v9yKkC93jwb739hEa74MLfyVSYIozan9gP-K1HkLX9A996Szuodd51YHoxfbR7nhjdmV6HgbyDsPWzZ85NGKEwwRq2o34CjNriqQNQQCWAta_h-BP9pIWAIj1QfrMJuKv2Pt6n_1aD8coOp1rhERGWJrIvOTb91DOZ4MxAdxLvW_M65KduaiFRSekWs7DzB4ov4l9IAcejUFyYwcYBB_72UZXdAlcMxryycdaZBsXt8rYVhsLou4pCBPLB7O7VqkIAH6cVpt6mxpIU__5Aep38G3XMzKXBttPA4xVbbNR-WBocIFzAZRWKI4aYxiDYF1bzLbaIvp8_DW6eY_hX2jBQGnwqgfdnbWPJumGuoBcHq35z_s_gy7xRFR1-d5MSmSGiCG8EJsmUIsSv6KYzSz7hRyhXdmWljkHcOR72t-zBzNNr3ZkXpI1-cm72ZOnfxnORAmLwHNKmJdR-cCtCDmIC2JsfSCQOUdOMQypDvLmkFXMZ0je3I0EKlndsFjGYsWJ_qE21lplwvhJQuA3LyvMYWJypJTOKTiNcp5-AJCtdtWRRl_pJgoFIfp0pZZP5tfMAy5z-91Nk5fPUpfWX-a-C0Oo422mMjWWYGKL6dafKSwlF96pS_KJH_VpD8g2HRGo0SljJT2Nd_MZeoN9Zslu5CPBbOw7aYCXDhdkc0BK8K-AFFMHu5I46eOI5SG25ev0dSdEqccCBFGGE6wTo14-TfmlpovsWMvqTVsHY8gaKYiLonfWQYjVSkjWPog=s927-no?authuser=0",
   };
 
-  historia.innerHTML = `
+  if( historia ) {
+    historia.innerHTML = `
         <div class="historia-imagem">
           <img src="${elemetHistory.foto}" alt="imagem de um prédio antigo em preto e branco" width="1040"
             height="1040">
@@ -56,6 +57,7 @@ function timeLine() {
           <p class="font-s cor-02">${elemetHistory.historia}</p>
         </div>
     `;
+  }
 
   function pegarAno(ano) {
     ano.addEventListener("click", handleTrocar);
